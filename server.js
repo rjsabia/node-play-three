@@ -13,7 +13,8 @@ app.use(bodyParser.json());
 app.use(helmet());
 //routes
 app.get('/', function(req, res){
-	res.send('Hello World');
+	res.json({message: 'Hello World'});
 })
 //turn on server
 app.listen(3000);
+module.exports = app;
